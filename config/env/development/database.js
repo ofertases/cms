@@ -1,16 +1,10 @@
 module.exports = ({ env }) => ({
   connection: {
-    client: 'mysql',
+    client: 'sqlite',
     connection: {
-        host:  process.env.DATABASE_HOST,
-        port: 3306,
-        database: process.env.DATABASE_NAME,
-        user: process.env.DATABASE_USERNAME,
-        password: process.env.DATABASE_PASSWORD,
-      ssl: {
-        rejectUnauthorized: false
-      },
+      filename: env('DATABASE_FILENAME', '.tmp/data.db'),
     },
+    useNullAsDefault: true,
     debug: false,
   },
 });
