@@ -16,6 +16,9 @@
     "@strapi/strapi": "4.11.4",
     "better-sqlite3": "8.0.1",
     "mysql": "^2.18.1",
+    "pg": "^8.11.1",
+    "pg-connection-string": "^2.6.1",
+    "postgres": "^3.3.5",
     "strapi-plugin-duplicate-button": "^1.1.11",
     "strapi-plugin-multi-select": "^1.1.0",
     "strapi4-ftp-provider": "^1.0.5"

@@ -1,16 +1,13 @@
 module.exports = ({ env }) => ({
-  connection: {
-    client: 'mysql',
     connection: {
-        host:  process.env.DATABASE_HOST,
-        port: 3306,
-        database: process.env.DATABASE_NAME,
-        user: process.env.DATABASE_USERNAME,
-        password: process.env.DATABASE_PASSWORD,
-      ssl: {
-        rejectUnauthorized: false
-      },
+      client: 'postgres',
+      connection: {
+        host: env ('DATABASE_HOST'),
+        port: env.int('DATABASE_PORT'),
+        database: env('DATABASE_NAME'),
+        user: env('DATABASE_USERNAME'),
+        password: env('DATABASE_PASSWORD'),
+        ssl: env.bool('DATABASE_SSL', true),
     },
-    debug: false,
-  },
+  }
 });
