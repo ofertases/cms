@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "filiais",
+  "info": {
+    "singularName": "filial",
+    "pluralName": "filiais",
+    "displayName": "Filial",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Filial": {
+      "type": "string"
+    },
+    "bairro": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bairro.bairro"
+    },
+    "Foto": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "empresa": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::empresa.empresa"
+    },
+    "oferta": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::oferta.oferta",
+      "inversedBy": "filials"
+    }
+  }
+}

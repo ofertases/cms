@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cidades",
+  "info": {
+    "singularName": "cidade",
+    "pluralName": "cidades",
+    "displayName": "Cidades"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Cidade": {
+      "type": "string",
+      "required": true
+    },
+    "empresa": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::empresa.empresa",
+      "inversedBy": "cidades"
+    }
+  }
+}

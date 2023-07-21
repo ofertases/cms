@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bairros",
+  "info": {
+    "singularName": "bairro",
+    "pluralName": "bairros",
+    "displayName": "Bairros"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Bairro": {
+      "type": "string"
+    },
+    "cidades": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cidade.cidade"
+    }
+  }
+}

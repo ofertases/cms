@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "empresas",
+  "info": {
+    "singularName": "empresa",
+    "pluralName": "empresas",
+    "displayName": "Empresas",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Empresa": {
+      "type": "string"
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "cidades": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cidade.cidade",
+      "mappedBy": "empresa"
+    }
+  }
+}
