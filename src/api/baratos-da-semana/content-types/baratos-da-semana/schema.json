@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "baratos_da_semanas",
+  "info": {
+    "singularName": "baratos-da-semana",
+    "pluralName": "baratos-da-semanas",
+    "displayName": "Baratos da Semana",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Produto": {
+      "type": "string"
+    },
+    "empresa": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::empresa.empresa"
+    },
+    "Preco": {
+      "type": "decimal",
+      "required": true
+    },
+    "Imagem": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

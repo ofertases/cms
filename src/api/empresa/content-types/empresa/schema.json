@@ -28,6 +28,11 @@
       "relation": "oneToMany",
       "target": "api::cidade.cidade",
       "mappedBy": "empresa"
+    },
+    "categoria": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::categoria.categoria"
     }
   }
 }
