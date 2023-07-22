@@ -4,22 +4,24 @@
   "info": {
     "singularName": "oferta",
     "pluralName": "ofertas",
-    "displayName": "Oferta"
+    "displayName": "Ofertas",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "Nome": {
+    "Oferta": {
       "type": "string"
     },
     "Encarte": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "Validade": {
       "type": "date"

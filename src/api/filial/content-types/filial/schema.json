@@ -4,7 +4,7 @@
   "info": {
     "singularName": "filial",
     "pluralName": "filiais",
-    "displayName": "Filial",
+    "displayName": "Filiais",
     "description": ""
   },
   "options": {
@@ -21,14 +21,15 @@
       "target": "api::bairro.bairro"
     },
     "Foto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "empresa": {
       "type": "relation",
