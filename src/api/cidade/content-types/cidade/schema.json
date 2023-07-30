@@ -15,7 +15,7 @@
       "type": "string",
       "required": true
     },
-    "empresas": {
+    "empresa": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::empresa.empresa",
