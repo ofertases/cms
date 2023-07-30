@@ -25,9 +25,9 @@
     },
     "cidades": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::cidade.cidade",
-      "mappedBy": "empresa"
+      "mappedBy": "empresas"
     },
     "categoria": {
       "type": "relation",

@@ -15,9 +15,9 @@
       "type": "string",
       "required": true
     },
-    "empresa": {
+    "empresas": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::empresa.empresa",
       "inversedBy": "cidades"
     }
