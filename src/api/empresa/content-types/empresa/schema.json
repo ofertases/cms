@@ -33,6 +33,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::categoria.categoria"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Empresa",
+      "required": true
     }
   }
 }

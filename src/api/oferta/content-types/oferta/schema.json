@@ -31,6 +31,11 @@
       "relation": "oneToMany",
       "target": "api::filial.filial",
       "mappedBy": "oferta"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Oferta",
+      "required": true
     }
   }
 }

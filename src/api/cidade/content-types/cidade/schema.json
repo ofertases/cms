@@ -4,7 +4,8 @@
   "info": {
     "singularName": "cidade",
     "pluralName": "cidades",
-    "displayName": "Cidades"
+    "displayName": "Cidades",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -20,6 +21,10 @@
       "relation": "manyToMany",
       "target": "api::empresa.empresa",
       "inversedBy": "cidades"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Cidade"
     }
   }
 }
