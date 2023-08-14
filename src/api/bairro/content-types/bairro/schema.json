@@ -4,7 +4,8 @@
   "info": {
     "singularName": "bairro",
     "pluralName": "bairros",
-    "displayName": "Bairros"
+    "displayName": "Bairros",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -18,6 +19,10 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::cidade.cidade"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Bairro"
     }
   }
 }
