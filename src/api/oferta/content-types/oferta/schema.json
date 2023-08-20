@@ -20,7 +20,8 @@
       "multiple": true,
       "required": false,
       "allowedTypes": [
-        "images"
+        "images",
+        "files"
       ]
     },
     "Validade": {
