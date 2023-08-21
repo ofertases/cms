@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "termos_e_condicoes",
+  "info": {
+    "singularName": "termos-e-condicao",
+    "pluralName": "termos-e-condicoes",
+    "displayName": "Termos e condições"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Texto": {
+      "type": "richtext"
+    }
+  }
+}

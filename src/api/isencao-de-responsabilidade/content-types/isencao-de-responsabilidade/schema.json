@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "isencao_de_responsabilidades",
+  "info": {
+    "singularName": "isencao-de-responsabilidade",
+    "pluralName": "isencao-de-responsabilidades",
+    "displayName": "Isenção de responsabilidade"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Texto": {
+      "type": "richtext"
+    }
+  }
+}
