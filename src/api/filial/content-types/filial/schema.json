@@ -36,15 +36,15 @@
       "relation": "oneToOne",
       "target": "api::empresa.empresa"
     },
-    "oferta": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::oferta.oferta",
-      "inversedBy": "filials"
-    },
     "slug": {
       "type": "uid",
       "targetField": "Filial"
+    },
+    "ofertas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::oferta.oferta",
+      "inversedBy": "filials"
     }
   }
 }

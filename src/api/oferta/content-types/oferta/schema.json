@@ -29,9 +29,9 @@
     },
     "filials": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::filial.filial",
-      "mappedBy": "oferta"
+      "mappedBy": "ofertas"
     },
     "slug": {
       "type": "uid",
