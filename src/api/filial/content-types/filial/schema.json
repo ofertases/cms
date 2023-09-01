@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "Filial": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "bairro": {
       "type": "relation",
@@ -23,12 +24,9 @@
     "Foto": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ]
     },
     "empresa": {
@@ -38,7 +36,8 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "Filial"
+      "targetField": "Filial",
+      "required": true
     },
     "ofertas": {
       "type": "relation",

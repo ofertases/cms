@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "Bairro": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "cidades": {
       "type": "relation",
@@ -22,7 +23,8 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "Bairro"
+      "targetField": "Bairro",
+      "required": true
     }
   }
 }
