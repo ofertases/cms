@@ -13,7 +13,7 @@ module.exports = ({ env }) => {
         user,
         password,
         ssl: env.bool('DATABASE_SSL', true),
-
+        timezone: 'America/Sao_Paulo'
       },
       debug: false,
     },
